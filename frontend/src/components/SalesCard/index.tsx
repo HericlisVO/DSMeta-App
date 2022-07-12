@@ -1,7 +1,8 @@
-import NotificationButton from '../NotificationButton'
-import './style.css'
-import DatePicker from 'react-datepicker'
-import { useState } from 'react'
+import NotificationButton from '../NotificationButton';
+import './style.css';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import { useState } from 'react';
 function SalesCard() {
     const date = new Date(new Date().setDate(new Date().getDate() - 365));
     const [minDate, setMinDate] = useState(date);
@@ -93,4 +94,4 @@ function SalesCard() {
         </>
     )
 }
-export default SalesCard
+export default SalesCard;
